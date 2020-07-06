@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <link rel="stylesheet" href="./asset/css/google-font.css">
+  <link rel="stylesheet" href="./asset/materialize-v1.0.0/materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="./asset/css/index.css">
+  <body>
+    <button id="importBtn" class="btn waves-effect waves-light" type="button" name="action">Choose File
+    </button>
+    <form class="col s12">
+      <div class="row">
+          <div class="input-field col s12">
+              <textarea id="txtEmailInput" class="materialize-textarea" rows="5"></textarea>
+              <label for="txtEmailInput">Email</label>
+          </div>
+      </div>
+    </form>
+    <div id="progressbar">
+      <div></div>
+    </div>
+    <button id="startBtn" class="btn waves-effect waves-light" type="button" name="action">Start
+      <i class="material-icons right">send</i>
+    </button>
+
+  </body>
+  <script>
+    window.$ = window.jQuery = require('jquery');
+    require('hammerjs')
+    require('materialize-css')
+  </script>
+  <script src="./asset/js/index.js"></script>
+</html>
